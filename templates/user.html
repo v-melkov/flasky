@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
+
 {% block title %}Users page{% endblock %}
 {% block page_content %}
     <div class="page-header">
         <h1>Users page</h1>
     </div>
-    <p class="text-info">Hello {{ name }}! This is an old  template</p>
+    <p class="text-info">Hello {% if name %}{{ name }}{% else %}Starnger{% endif %}! This is an old  template</p>
+
+
+
 
 {% endblock %}
