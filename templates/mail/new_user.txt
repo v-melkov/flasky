@@ -1,0 +1,1 @@
+Hello, admin. New user is register by name {{ user }}

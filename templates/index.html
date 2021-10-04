@@ -6,6 +6,11 @@
     <h1>Index page</h1>
     </div>
     <h3 class="page-header"> Привет, {% if name %}{{ name }}{% else %}путник{% endif %}!</h3>
+    {% if not know %}
+    <p>Nice to meet you</p>
+    {% else %}
+    Welcome back!
+    {% endif %}
 {#    <p class="text-left">This is amazing</p>#}
 
     <p class="text-left">Местное время {{ moment(current_time).format('LLL') }}</p>
