@@ -5,18 +5,18 @@
     <div class="page-header">
     <h1>Index page</h1>
     </div>
-    <h1>{{ name }}</h1>
+{#    <h1>{{ name }}</h1>#}
     <h3 class="page-header"> Привет, {% if name %}{{ name }}{% else %}путник{% endif %}!</h3>
-    {% if not know %}
-    <p>Nice to meet you</p>
-    {% else %}
-    Welcome back!
-    {% endif %}
+{#    {% if not know %}#}
+{#    <p>Nice to meet you</p>#}
+{#    {% else %}#}
+{#    Welcome back!#}
+{#    {% endif %}#}
 {#    <p class="text-left">This is amazing</p>#}
 
     <p class="text-left">Местное время {{ moment(current_time).format('LLL') }}</p>
     <p class="text-left">Это было {{ moment(current_time).fromNow(refresh=True) }}</p>
 
-            {{ wtf.quick_form(form) }}
+{#            {{ wtf.quick_form(form) }}#}
 
 {% endblock %}
